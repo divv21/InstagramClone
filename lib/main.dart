@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_facebook/utls/routes.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
 
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
-        "/Login": (context) => LoginPage()
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage()
       },
     );
   }  
